@@ -10,7 +10,7 @@
     <h1>Parade: Booked Tiks</h1>
     {% for ticket in tickets %}
     <p>
-    {{ticket.patron_name}}: Ticket {{ticket.index}}: {{ticket.show_name}} - {{ticket.date}}
+    {{ticket.patron_name}}: Ticket {{ticket.index}} - {{ticket.show_name}} - {{ticket.date}} - Time :{{ticket.time}} ({{ticket.place}})
     </p>
     {%endfor%}
 </body>
